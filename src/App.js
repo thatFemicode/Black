@@ -1,8 +1,13 @@
-import logo from "./logo.svg";
-import "./App.css";
+import { ThemeProvider } from "styled-components";
+import { MainStyled } from "./Styling/MainStyled";
+import { theme } from "./Styling/theme";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <ThemeProvider theme={theme}>
+      <MainStyled></MainStyled>
+    </ThemeProvider>
+  );
 }
 
 export default App;

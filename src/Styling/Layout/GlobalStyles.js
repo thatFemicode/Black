@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import bg from "./Pages/Marketplace/img/noise.png";
+// import bg from "./Pages/Marketplace/img/noise.png";
 const GlobalStyle = createGlobalStyle`
 
 :root {
@@ -47,14 +47,16 @@ const GlobalStyle = createGlobalStyle`
 }
 html {
   scroll-behavior: smooth;
+  cursor: none;
 }
 body{
-  /* background-color:pink; */
+  background-color:pink;
 /* overflow: hidden; */
 overflow-x: hidden;
 height:100%;
 width:100%;
 color:var(--black);
+
 
 /* background-color:#e9dbd4; */
 -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -119,9 +121,7 @@ li{
   display:flex;
   align-items: center;
   justify-content:center;
-  background: url(${bg});
-  svg 
-  {
+  svg {
 opacity:0;
 position: absolute;
 width:400px;

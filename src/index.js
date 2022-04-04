@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import GlobalStyle from "./Styling/Layout/GlobalStyles";
 import CustomCursor from "./Components/CustomCursor/CustomCursor";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const container = document.getElementById("root");
 const root = ReactDOM.createRoot(container);
@@ -12,7 +13,9 @@ root.render(
   <React.StrictMode>
     <CustomCursor />
     <GlobalStyle />
-    <App />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>
 );
 
